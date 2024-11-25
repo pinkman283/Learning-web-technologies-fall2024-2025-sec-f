@@ -3,8 +3,8 @@
 
     if(isset($_POST['submit'])){
 
-        $username  =  $_REQUEST['username'];
-        $username =trim($username);
+        $username  =  trim($_REQUEST['username']);
+        
         if($username == null ){
             echo "Null data found!";
         }
@@ -12,7 +12,11 @@
         {
             echo "wrong input";
         }
-        else if(!ctype_alpha($username))
+        else if(!preg_match("/^[a-zA-Z]/", $username))
+        {
+            echo "wrong input";
+        }
+        else if(!preg_match('/^[a-zA-Z][a-zA-Z.\-]*$/', $username))
         {
             echo "wrong input";
         }
