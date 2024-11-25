@@ -6,7 +6,7 @@
         if(empty($blood))
         echo "please select an group";
         else 
-        echo "blood group selected";
+        echo " blood group selected";
     }
     else{
         header('location: task6.html');

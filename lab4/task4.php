@@ -4,7 +4,7 @@
     {
         if(!isset($_POST['GENDER']))
         {
-            echo "please select an option!";
+            echo " please select an option!";
         }
         else 
         echo "option selected";

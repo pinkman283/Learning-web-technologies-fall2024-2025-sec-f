@@ -5,7 +5,7 @@
 
         $email  =  trim($_REQUEST['email']);
         if(empty($email))
-            echo "null value found";
+            echo " null value found";
         else if(!filter_var($email,FILTER_VALIDATE_EMAIL))
         {
             echo "invalid input";

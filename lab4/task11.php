@@ -10,11 +10,11 @@
         }
         else if(strlen($username)<3)
         {
-            echo "wrong input";
+            echo "wrong input ";
         }
         else if(!preg_match("/^[a-zA-Z]/", $username))
         {
-            echo "wrong input";
+            echo "wrong input ";
         }
         else if(!preg_match('/^[a-zA-Z][a-zA-Z.\-]*$/', $username))
         {

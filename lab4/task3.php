@@ -8,7 +8,7 @@
         $yyyy=$_POST['yyyy'];
          if($dd==null || $mm==null || $yyyy==null)
         {
-            echo"null value found";
+            echo" null value found";
         }
         else if($dd<1 || $dd>31)
         {
